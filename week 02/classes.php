@@ -119,7 +119,7 @@ $base_class->myMethod();
 
 //print_r( $base_class );  //good for debugging at times
 
-unset($base_class);
+//unset($base_class);
 
 print 'Buh-bye';
 
@@ -132,6 +132,7 @@ MyChildClass::myStaticMethod();
 print '<br /><br />';
 print '<br /><br />';
 
+
 myFuncInterface($base_class);
 myFuncInterface($child); //still works, why?
 
@@ -139,5 +140,5 @@ myFuncBaseClass($base_class); //base class instance
 myFuncBaseClass($child);	//still works, why?
 
 myFuncChildClass($child);
-myFuncChildClass($base_class);	//doesn't work, why?
+//myFuncChildClass($base_class);	//doesn't work, why?
 
